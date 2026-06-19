@@ -4,3 +4,17 @@ body {
 #mainpage {
   font-family: "Lucida Console", monospace;
 }
+#devpage {
+  font-family: "Lucida Console", monospace;
+}
+#stablepage {
+  font-family: "Lucida Console", monospace;
+}
+input[type=submit] {
+  background-color: tan;
+}
+input[type=text] {
+  background-color: PapayaWhip;
+  width: 450px;
+  height: 300px;
+}
