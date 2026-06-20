@@ -13,7 +13,7 @@ body {
 input[type=submit] {
   background-color: tan;
 }
-input[type=text] {
+textarea {
   background-color: PapayaWhip;
   width: 450px;
   height: 300px;
