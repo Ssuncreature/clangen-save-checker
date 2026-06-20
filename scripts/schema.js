@@ -7,12 +7,6 @@ var clandev = {
     "clan_symbol": "string",
     "gamemode": gamemodes,
     "cruel_cards": ["string"],
-    "used_group_IDs": {
-        "1": "player_clan",
-        "2": "starclan",
-        "3": "unknown_residence",
-        "4": "dark_forest"
-    },
     "last_focus_change": "string",
     "clans_in_focus": ["string"],
     "instructor": "string",
@@ -24,11 +18,9 @@ var clandev = {
     ],
     "just_died": ["string"],
     "dead_cats_to_grieve": ["string"],
-    "grief_to_assign": {},
     "version_name": "number",
     "version_commit": "string",
     "source_build": "booleen",
-    "custom_pronouns": {},
     "leader": "string",
     "leader_lives": "number",
     "leader_predecessors": "number",
@@ -41,17 +33,6 @@ var clandev = {
     "faded_cats": "string",
     "patrolled_cats": [
         "string"
-    ],
-    "other_clans": [
-        {
-            "group_ID": "string",
-            "name": "string",
-            "relations": "number",
-            "temperament": [
-                "string"
-            ],
-            "chosen_symbol": "string"
-        }
     ],
     "war": {
         "at_war": "booleen",
@@ -78,14 +59,6 @@ var clanstable = {
     "camp_bg": background,
     "clan_symbol": "string",
     "gamemode": gamemodes,
-    "cruel_cards": ["string"],
-    "used_group_IDs": {
-        "1": "player_clan",
-        "2": "starclan",
-        "3": "unknown_residence",
-        "4": "dark_forest"
-    },
-    "last_focus_change": "string",
     "clans_in_focus": ["string"],
     "instructor": "string",
     "reputation": "number",
@@ -96,11 +69,9 @@ var clanstable = {
     ],
     "just_died": ["string"],
     "dead_cats_to_grieve": ["string"],
-    "grief_to_assign": {},
     "version_name": "number",
     "version_commit": "string",
     "source_build": "booleen",
-    "custom_pronouns": {},
     "leader": "string",
     "leader_lives": "number",
     "leader_predecessors": "number",
@@ -113,17 +84,6 @@ var clanstable = {
     "faded_cats": "string",
     "patrolled_cats": [
         "string"
-    ],
-    "other_clans": [
-        {
-            "group_ID": "string",
-            "name": "string",
-            "relations": "number",
-            "temperament": [
-                "string"
-            ],
-            "chosen_symbol": "string"
-        }
     ],
     "war": {
         "at_war": "booleen",
