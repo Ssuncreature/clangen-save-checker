@@ -1,4 +1,5 @@
 function stableClanCats() {
+    text = document.getElementById("catsstable").value;
     try {
     JSON.parse(text);
     // Add the long if statement collection
@@ -8,6 +9,7 @@ function stableClanCats() {
   }
 }
 function devClanCats() {
+    text = document.getElementById("catsdev").value;
     try {
     JSON.parse(text);
     // Add the long if statement collection
