@@ -1,0 +1,4 @@
+<link rel="stylesheet" href="style.css">
+    <script src="scripts/id.js"></script>
+<div id="idcomp">
+</div>

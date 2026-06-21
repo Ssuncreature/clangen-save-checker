@@ -10,6 +10,9 @@ body {
 #stablepage {
   font-family: "Lucida Console", monospace;
 }
+#idcomp {
+  font-family: "Lucida Console", monospace;
+}
 input[type=submit] {
   background-color: tan;
 }
