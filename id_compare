@@ -12,5 +12,6 @@
         <input type="file" id="clan.json">
         <label> Your clan cats </label>
         <input type="file" id="clan_cats">
+        <input type="submit onclick="IDcompare()">
     </form>
 </div>
