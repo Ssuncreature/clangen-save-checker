@@ -1,4 +1,16 @@
 <link rel="stylesheet" href="style.css">
     <script src="scripts/id.js"></script>
 <div id="idcomp">
+    <h1> 
+        Clan ID Comparison tool
+    </h1>
+    <p>
+        Use if you've added a cat and they aren't visible in game 
+    </p>
+    <form>
+        <label> Your Clan.json </label>
+        <input type="file" id="clan.json">
+        <label> Your clan cats </label>
+        <input type="file" id="clan_cats">
+    </form>
 </div>
