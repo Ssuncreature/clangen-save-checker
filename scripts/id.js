@@ -4,10 +4,12 @@ function IDcompare(){
   if ('files' in clan) {
     if (clan.files.length == 0) {
       document.getElementById('missingid').textContent = "Select your clan.json!";
+      return
     } else {
       if ('files' in clancats) {
         if (clancats.files.length == 0) {
           document.getElementById('missingid').textContent = "Select your clan_cats.json!";
+          return
         } else {
           //TODO: Begin actual check
           //get ids from clan.json
@@ -21,6 +23,7 @@ function IDcompare(){
   else { 
     if (clan.value == "" && clancats.value == "") {
       document.getElementById('missingid').textContent = "Select one or more files!";
+      return
     }
   }
 }
