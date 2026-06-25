@@ -6,15 +6,21 @@ function IDcompare(){
       txt = "Select your clan.json!";
     } else {
       if ('files' in clancats) {
-    if (clancats.files.length == 0) {
-      txt = "Select your clan_cats.json!";
-    } else {
-      
-      }
+        if (clancats.files.length == 0) {
+          txt = "Select your clan_cats.json!";
+        } else {
+          //TODO: Begin actual check
+          //get ids from clan.json
+          //get ids from clan_cats.json
+          //compare
+          //return what isn't there
+        }
       }
     }
-  elif (clan.value == "" && clancats.value == ""); {
+  }
+  else { 
+    if (clan.value == "" && clancats.value == "") {
       txt += "Select one or more files!";
     }
   }
-  }
+}
