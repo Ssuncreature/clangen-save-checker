@@ -13,10 +13,8 @@ function IDcompare(){
       }
       }
     }
-  else {
-    if (clan.value == "") and (clancats.value == "") {
+  elif (clan.value == "" && clancats.value == ""); {
       txt += "Select one or more files!";
     }
   }
   }
-}
