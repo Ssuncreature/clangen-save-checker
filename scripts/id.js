@@ -3,11 +3,11 @@ function IDcompare(){
   var clancats = document.getElementById("clan_cats");
   if ('files' in clan) {
     if (clan.files.length == 0) {
-      txt = "Select your clan.json!";
+      document.getElementById('missingid').textContent = "Select your clan.json!";
     } else {
       if ('files' in clancats) {
         if (clancats.files.length == 0) {
-          txt = "Select your clan_cats.json!";
+          document.getElementById('missingid').textContent = "Select your clan_cats.json!";
         } else {
           //TODO: Begin actual check
           //get ids from clan.json
@@ -20,7 +20,7 @@ function IDcompare(){
   }
   else { 
     if (clan.value == "" && clancats.value == "") {
-      txt += "Select one or more files!";
+      document.getElementById('missingid').textContent = "Select one or more files!";
     }
   }
 }
