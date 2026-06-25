@@ -1,6 +1,7 @@
 function IDcompare(){
   var clan = document.getElementById("clan.json");
   var clancats = document.getElementById("clan_cats");
+  event.preventDefault(); 
   if ('files' in clan) {
     if (clan.files.length == 0) {
       document.getElementById('missingid').textContent = "Select your clan.json!";
