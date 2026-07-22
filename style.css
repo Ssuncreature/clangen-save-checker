@@ -1,5 +1,5 @@
 body {
-  background-color: bisque;
+  background-color: rgb(240,230,203);
 }
 #mainpage {
   font-family: "Lucida Console", monospace;
@@ -12,9 +12,6 @@ body {
 }
 #idcomp {
   font-family: "Lucida Console", monospace;
-}
-input[type=submit] {
-  background-color: tan;
 }
 textarea {
   background-color: PapayaWhip;
