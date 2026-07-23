@@ -1,30 +1,16 @@
 function IDcompare(){
-  var clan = document.getElementById("clan.json");
-  var clancats = document.getElementById("clan_cats");
-  event.preventDefault(); 
-  if ('files' in clan) {
-    if (clan.files.length == 0) {
-      document.getElementById('missingid').textContent = "Select your clan.json!";
-      return
-    } else {
-      if ('files' in clancats) {
-        if (clancats.files.length == 0) {
-          document.getElementById('missingid').textContent = "Select your clan_cats.json!";
-          return
-        } else {
-          //TODO: Begin actual check
-          //get ids from clan.json
-          //get ids from clan_cats.json
-          //compare
-          //return what isn't there
-        }
-      }
-    }
+  event.preventDefault()
+  const clanInput = document.getElementById('clan.json')
+  const catInput = document.getElementById('clan_cats')
+  // make sure there's actually info 
+  if (clanInput.files.length === 0) {
+  document.getElementById("missingid").textContent="No clan.json uploaded!";
   }
-  else { 
-    if (clan.value == "" && clancats.value == "") {
-      document.getElementById('missingid').textContent = "Select one or more files!";
-      return
-    }
+  else if (catInput.files.length === 0) {
+  document.getElementById("missingid").textContent="No clan_cats.json uploaded!";
+  }
+  else {
+  const clan = JSON.parse(clanInput)
+  const cat = JSON.parse(catInput)
   }
 }
