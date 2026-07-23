@@ -3,6 +3,7 @@ body {
 }
 #mainpage {
   font-family: "Lucida Console", monospace;
+  text-align: center;
 }
 #devpage {
   font-family: "Lucida Console", monospace;
@@ -18,3 +19,19 @@ textarea {
   width: 450px;
   height: 300px;
 } 
+#banner {
+  background-image: url(images/menu_logoless.png);
+
+} 
+@font-face {
+  font-family: clangen;
+  src: url('images/clangen.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.customfont {
+  font-family: clangen;
+  font-size: 100px;
+  color: white;
+}
