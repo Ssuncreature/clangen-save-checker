@@ -32,6 +32,13 @@ textarea {
 
 .customfont {
   font-family: clangen;
-  font-size: 100px;
   color: white;
+}
+
+h1 {
+    font-size: 100px;
+}
+.backbut {
+  position: relative;
+  text-align: center;
 }
