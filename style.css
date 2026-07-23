@@ -7,12 +7,15 @@ body {
 }
 #devpage {
   font-family: "Lucida Console", monospace;
+  text-align: center;
 }
 #stablepage {
   font-family: "Lucida Console", monospace;
+  text-align: center;
 }
 #idcomp {
   font-family: "Lucida Console", monospace;
+  text-align: center;
 }
 textarea {
   background-color: PapayaWhip;

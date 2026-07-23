@@ -4,16 +4,18 @@
 <script src="scripts/clan.js">
 </script>
 <div ID="stablepage">
-<h1 class="customfont" style="color:black"> 
+    <div id="banner">
+<h1 class="customfont"> 
   Stable Release V0.13.x Checker
 </h1>
+</div>
 <p>
   This page is for checking files for version 0.13, the current stable release. If you are using the dev build, please go to the developmental release checker!</a>
 </p>
 <h3 class="customfont" style="color:black">
   "clan_cats.json" Checker
 </h3>
-<textarea id="catsstable" placeholder="Enter *full* clan_cats.json"></textarea>
+<input type="file">
 <br>
 <br>
 <input type="submit" onclick="stableClanCats()">
@@ -21,11 +23,12 @@
 <h3 class="customfont" style="color:black">
   "clan.json" Checker
 </h3>
-<textarea id="clanstable" placeholder="Enter *full* clan.json"></textarea>
+<input type="file">
 <br>
 <br>
 <input type="submit" onclick="stableClan()">
 <p id="clanresults"></p>
+<p>
   Wrong page? Return to the <a href="https://ssuncreature.github.io/clangen-save-checker/index.html">home page</a>!
 </p>
 </div>

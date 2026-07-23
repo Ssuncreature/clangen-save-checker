@@ -4,9 +4,11 @@
 <script src="scripts/clan.js">
 </script>
 <div ID="devpage">
-<h1 class="customfont" style="color:black"> 
+  <div id="banner">
+<h1 class="customfont"> 
   Developmental Release Checker
 </h1>
+</div>
 <p>
   This page is for checking files for the developmental version of the game. If you are using the stable build, please go to the stable release checker!</a>
   <br>
@@ -16,7 +18,7 @@
 <h3 class="customfont" style="color:black">
   "clan_cats.json" Checker
 </h3>
-<textarea id="catsdev" placeholder="Enter *full* clan_cats.json"></textarea>
+<input type="file">
 <br>
 <br>
 <input type="submit" onclick="devClanCats()">
@@ -24,7 +26,7 @@
 <h3 class="customfont" style="color:black">
   "clan.json" Checker
 </h3>
-<textarea id="clandev" placeholder="Enter *full* clan.json"></textarea>
+<input type="file">
 <br>
 <br>
 <input type="submit" onclick="devClan()">
