@@ -62,4 +62,6 @@ h1 {
 }
 #discord {
   float: left;
+  position: absolute; 
+  top: 0%;
 }
