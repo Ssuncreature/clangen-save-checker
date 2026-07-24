@@ -8,7 +8,22 @@ function stableClan(){
   else {
   const clan = JSON.parse(clanInput)
     if (not (clan.save_id)) {
-      document.getElementById("clanresults").textContent="No save id!";
+      document.getElementById("clanresults").textContent+="Missing save id";
+    }
+    else if (not (typeof clan.save_id === "string")) {
+      document.getElementById("clanresults").textContent+="Malformed save id!";
+    }
+    if (not (clan.displayname)) {
+      document.getElementById("clanresults").textContent+="Missing display name";
+    }
+    else if (not (typeof clan.displayname === "string")) {
+      document.getElementById("clanresults").textContent+="Malformed display name!";
+    }
+    if (not (clan.clanage)) {
+      document.getElementById("clanresults").textContent+="Missing clan age";
+    }
+    else if (typeof value === !isNaN()) {
+      document.getElementById("clanresults").textContent+="Clan age is not a number!";
     }
   }
 }
