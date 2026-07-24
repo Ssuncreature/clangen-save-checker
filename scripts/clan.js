@@ -1,8 +1,4 @@
-import "scripts/schema.js";
-import "stable_checker.html";
-import "dev_checker.html";
-
-function stableClan() {
+function stableClan(){
   event.preventDefault()
   const clanInput = document.getElementById('stableclan.json')
   // make sure there's actually info 
@@ -11,6 +7,8 @@ function stableClan() {
   }
   else {
   const clan = JSON.parse(clanInput)
-
+    if (not (clan.save_id)) {
+      document.getElementById("clanresults").textContent="No save id!";
+    }
   }
 }
