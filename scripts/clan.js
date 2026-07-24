@@ -1,3 +1,13 @@
+// initialize list of biomes/seasons/temperaments/symbols
+const biome = [
+  "Forest",
+  "Plains",
+  "Beach",
+  "Mountainous"
+]
+
+// Uhh so it doesn't seem to be reading right - check python code for clangen to set values
+
 function stableClan(){
   event.preventDefault()
   const clanInput = document.getElementById('stableclan.json')
@@ -22,8 +32,20 @@ function stableClan(){
     if (not (clan.clanage)) {
       document.getElementById("clanresults").textContent+="Missing clan age";
     }
-    else if (typeof value === !isNaN()) {
+    else if (typeof clan.clanage === !isNaN()) {
       document.getElementById("clanresults").textContent+="Clan age is not a number!";
+    }
+    if (not (clan.biome)) {
+      document.getElementById("clanresults").textContent+="Missing biome";
+    }
+    else if (not (typeof clan.biome === "string")) {
+      document.getElementById("clanresults").textContent+="Malformed biome!";
+    }
+    else if (not (biome.includes(clan.biome))) {
+      document.getElementById("clanresults").textContent+="'Biome' is not a valid biome";
+      }
+    if (not (clan.camp_bg)) {
+      document.getElementById("clanresults").textContent+="Missing camp background";
     }
   }
 }
